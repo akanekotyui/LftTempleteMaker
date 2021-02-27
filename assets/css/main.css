@@ -177,7 +177,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 2em 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1917,7 +1917,7 @@ input, select, textarea {
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 1em;
+		/* padding: 0 1em; */
 		text-decoration: none;
 		width: 100%;
 	}
@@ -3999,4 +3999,8 @@ input, select, textarea {
 		.mycol-6{flex:6;}
 		@media screen and (max-width:700px){
 		.legends-row{-webkit-flex-direction:column;flex-direction:column;}
+		}
+
+		summary {
+			padding: 2 2 2 0em;
 		}
