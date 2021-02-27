@@ -4004,3 +4004,17 @@ input, select, textarea {
 		summary {
 			padding: 2 2 2 0em;
 		}
+		.BarChartBox {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		
+		.BarChartBox .bar1 {
+			display: block;
+			background: #006d97;
+			text-align: center;
+			color: #f0ffff;
+			height: 2em;
+			line-height: 2em;
+			/* width:100%; */
+		}

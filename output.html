@@ -12,7 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
 <body class="is-preload">
@@ -47,274 +48,216 @@
 			<!-- One -->
 			<section id="one">
 				<div class="inner">
-					<form method="GET" action="output.html">
-						<header class="major">
-							<h2>基本情報</h2>
-						</header>
-						<div class="fields">
-							<div class="field">
-								<label for="origin_id">Origin ID</label>
-								<input type="text" name="origin_id" id="origin_id" />
+					<header class="major">
+						<h2>基本情報</h2>
+					</header>
+					<div class="fields">
+						<div class="field">
+							<label for="origin_id">Origin ID</label>
+							<div class="box">
+								<script>document.write(localStorage.getItem("origin_id"))</script>
 							</div>
-							<div class="field">
-								<label for="age">年齢</label>
-								<input type="text" name="age" id="age" />
-							</div>
-							<div class="field">
-								<label for="time">活動時間</label>
-								<input type="text" name="time" id="time" />
-							</div>
-							<div class="field">
-								<label for="vision">今の目標</label>
-								<input type="text" name="vision" id="vision" />
-							</div>
-							<div class="field">
-								<label for="team">過去に所属していたチーム</label>
-								<input type="text" name="team" id="team" />
-							</div>
-							<div class="field">
-								<label for="sponsor">過去に契約していたスポンサー</label>
-								<input type="text" name="sponsor" id="sponsor" />
-							</div>
-							<div class="field">
-								<label for="live_url">配信URL</label>
-								<textarea name="live_url" id="live_url" rows="3"></textarea>
-							</div>
+
 						</div>
-						<header class="major">
-							<h2>スキルと特徴</h2>
-						</header>
-						<div class="fields">
-							<div class="field">
-								<label for="legends">使用レジェンズ</label>
-								<div class="legends-row">
-									<div class="mycol-1" style="margin: 1em;">
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="wraith" name="wraith" value="wraith">
-											<label for="wraith">レイス</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="bloodhound" name="bloodhound" value="bloodhound">
-											<label for="bloodhound">ブラッド・ハウンド</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="gibraltar" name="gibraltar" value="gibraltar">
-											<label for="gibraltar">ジブラルタル</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="horizon" name="horizon" value="horizon">
-											<label for="horizon">ホライゾン</label>
-										</div>
-									</div>
-									<div class="mycol-1" style="margin: 1em;">
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="coustic" name="coustic" value="coustic">
-											<label for="coustic">コースティック</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="crypto" name="crypto">
-											<label for="crypto">クリプト</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="wattson" name="wattson" value="wattson">
-											<label for="wattson">ワットソン</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="revenant" name="revenant" value="revenant">
-											<label for="revenant">レヴナント</label>
-										</div>
-									</div>
-									<div class="mycol-1" style="margin: 1em;">
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="octane" name="octane" value="octane">
-											<label for="octane">オクタン</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="pathfinder" name="pathfinder" value="pathfinder">
-											<label for="pathfinder">パスファインダー</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="rampart" name="rampart">
-											<label for="rampart">ランパート</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="loba" name="loba" value="loba">
-											<label for="loba">ローバ</label>
-										</div>
-									</div>
-									<div class="mycol-1" style="margin: 1em;">
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="lifeline" name="lifeline" value="lifeline">
-											<label for="lifeline">ライフライン</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="bangalore" name="bangalore" value="bangalore">
-											<label for="bangalore">バンガロール</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="mirage" name="mirage" value="mirage">
-											<label for="mirage">ミラージュ</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="fuse" name="fuse" value="fuse">
-											<label for="fuse">ヒューズ</label>
-										</div>
-									</div>
-								</div>
-								<div class="field">
-									<label for="skill">スキル</label>
-									<div class="col-6 col-12-small">
-										<label for="short_range">近距離レンジ</label>
-
-										<input type="range" id="short_range" name="short_range" value="short_range"
-											list="tickmarks">
-
-									</div>
-									<div class="col-6 col-12-small">
-										<label for="middle_range">中距離レンジ</label>
-										<input type="range" min="0" max="100" step="10" id="middle_range"
-											name="middle_range" value="middle_range" list="tickmarks">
-									</div>
-									<div class="col-6 col-12-small">
-										<label for="long_range">遠距離レンジ</label>
-										<input type="range" min="0" max="100" step="10" id="long_range"
-											name="long_range" value="long_range" list="tickmarks">
-									</div>
-									<div class="col-6 col-12-small">
-										<label for="igl">IGL</label>
-										<input type="range" min="0" max="100" step="10" id="igl" name="igl" value="igl"
-											list="tickmarks">
-									</div>
-									<div class="col-6 col-12-small">
-										<label for="dome">ドームファイト</label>
-										<input type="range" min="0" max="100" step="10" id="dome" name="dome"
-											value="dome" list="tickmarks">
-									</div>
-								</div>
-							</div>
-						</div>
-						<header class="major">
-							<h2>大会実績</h2>
-						</header>
-						<div class="fields">
-							<div class="field">
-								<label for="archive">大会実績</label>
-							</div>
-							<div class="field">
-								<details>
-									<summary>直接入力</summary>
-									<div class="direct" id="direct">
-										<p>
-											最大10の大会実績を入力することができます。
-										</p>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>大会名</th>
-														<th>順位</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td><input type="text" name="tournament-name-1"
-																id="tournament-name-1" /></td>
-														<td><input type="text" name="prize-1" id="prize-1" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-2"
-																id="tournament-name-2" /></td>
-														<td><input type="text" name="prize-2" id="prize-2" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-3"
-																id="tournament-name-3" /></td>
-														<td><input type="text" name="prize-3" id="prize-3" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-4"
-																id="tournament-name-4" /></td>
-														<td><input type="text" name="prize-4" id="prize-4" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-5"
-																id="tournament-name-5" /></td>
-														<td><input type="text" name="prize-5" id="prize-5" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-6"
-																id="tournament-name-6" /></td>
-														<td><input type="text" name="prize-6" id="prize-6" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-7"
-																id="tournament-name-7" /></td>
-														<td><input type="text" name="prize-7" id="prize-7" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-8"
-																id="tournament-name-8" /></td>
-														<td><input type="text" name="prize-8" id="prize-8" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-9"
-																id="tournament-name-9" /></td>
-														<td><input type="text" name="prize-9" id="prize-9" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-10"
-																id="tournament-name-10" /></td>
-														<td><input type="text" name="prize-10" id="prize-10" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-11"
-																id="tournament-name-11" /></td>
-														<td><input type="text" name="prize-11" id="prize-11" /></td>
-													</tr>
-													<tr>
-														<td><input type="text" name="tournament-name-12"
-																id="tournament-name-12" /></td>
-														<td><input type="text" name="prize-12" id="prize-12" /></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-
-									</div>
-								</details>
-							</div>
-							<div class="field">
-								<details>
-									<summary>Liquidpediaから入力</summary>
-									<p>
-										LiquidpediaのArchivementまたはResultのデータをコピペして入力できます。
-									</p>
-									<div id="liquidpedia">
-										<div class="field">
-											<textarea name="archive" id="archive" rows="12"></textarea>
-										</div>
-									</div>
-							</div>
-
-							</details>
-							<div class="field">
-								<label for="point">ALGSポイント</label>
-								<input type="text" name="point" id="point" />
-							</div>
-							<div class="field">
-								<label for="skill">ランク実績</label>
-								<textarea name="rank" id="rank" rows="3"></textarea>
+						<div class="field">
+							<label for="age">年齢</label>
+							<div class="box">
+								<script>document.write(localStorage.getItem("age"))</script>
 							</div>
 						</div>
 						<div class="field">
-							<ul class="actions">
-								<li><input type="submit" value="入力完了" class="primary" onclick="save(base);" />
-								</li>
-								<li><input type="reset" value="すべてクリア" onclick="clear();" /></li>
-							</ul>
+							<label for="time">活動時間</label>
+							<div class="box">
+								<script>document.write(localStorage.getItem("time"))</script>
+							</div>
 						</div>
-					</form>
-				</div>
+						<div class="field">
+							<label for="vision">今の目標</label>
+							<div class="box">
+								<script>document.write(localStorage.getItem("vision"))</script>
+							</div>
+						</div>
+						<div class="field">
+							<label for="team">過去に所属していたチーム</label>
+							<div class="box">
+								<script>document.write(localStorage.getItem("team"))</script>
+							</div>
+						</div>
+						<div class="field">
+							<label for="sponsor">過去に契約していたスポンサー</label>
+							<div class="box">
+								<script>document.write(localStorage.getItem("sponsor"))</script>
+							</div>
+						</div>
+						<div class="field">
+							<label for="live_url">配信URL</label>
+							<div class="box">
+								<script>document.write(localStorage.getItem("live_url"))</script>
+							</div>
+						</div>
+					</div>
+					<header class="major">
+						<h2>スキルと特徴</h2>
+					</header>
+					<div class="fields">
+						<div class="field">
+							<label for="legends">使用レジェンズ</label>
+							<div class="legends-row">
+								<div id="legends" class="legends" style="margin: 1em;">
+									<script>
+										array = JSON.parse(localStorage.getItem("legendsjp"));
+										array.forEach(element => {
+											document.write('<li>' + element + '</li>')
+										});
+									</script>
+								</div>
+							</div>
+							<div class="field">
+								<label for="skill">スキル</label>
+								<div class="col-6 col-12-small">
+									<label for="short_range">近距離レンジ</label>
+									<div class="BarChartBox">
+										<script>
+											var value = JSON.parse(localStorage.getItem("skill"))[0];
+											document.write("<span class=\"bar1\" style=\"width: " + value + "%;\">")
+											document.write(value + " / 100")
+										</script>
+									</div>
+								</div>
+								<div class="col-6 col-12-small">
+									<label for="middle_range">中距離レンジ</label>
+									<div class="BarChartBox">
+										<script>
+											var value = JSON.parse(localStorage.getItem("skill"))[1];
+											document.write("<span class=\"bar1\" style=\"width: " + value + "%;\">")
+											document.write(value + " / 100")
+										</script>
+									</div>
+								</div>
+								<div class="col-6 col-12-small">
+									<label for="long_range">遠距離レンジ</label>
+									<div class="BarChartBox">
+										<script>
+											var value = JSON.parse(localStorage.getItem("skill"))[2];
+											document.write("<span class=\"bar1\" style=\"width: " + value + "%;\">")
+											document.write(value + " / 100")
+										</script>
+									</div>
+								</div>
+								<div class="col-6 col-12-small">
+									<label for="igl">IGL</label>
+									<div class="BarChartBox">
+										<script>
+											var value = JSON.parse(localStorage.getItem("skill"))[3];
+											document.write("<span class=\"bar1\" style=\"width: " + value + "%;\">")
+											document.write(value + " / 100")
+										</script>
+									</div>
+								</div>
+								<div class="col-6 col-12-small">
+									<label for="dome">ドームファイト</label>
+									<div class="BarChartBox">
+										<script>
+											var value = JSON.parse(localStorage.getItem("skill"))[4];
+											document.write("<span class=\"bar1\" style=\"width: " + value + "%;\">")
+											document.write(value + " / 100")
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<header class="major">
+						<h2>大会実績</h2>
+					</header>
+					<div class="fields">
+						<div class="field">
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>大会名</th>
+											<th>順位</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" name="tournament-name-1" id="tournament-name-1" />
+											</td>
+											<td><input type="text" name="prize-1" id="prize-1" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-2" id="tournament-name-2" />
+											</td>
+											<td><input type="text" name="prize-2" id="prize-2" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-3" id="tournament-name-3" />
+											</td>
+											<td><input type="text" name="prize-3" id="prize-3" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-4" id="tournament-name-4" />
+											</td>
+											<td><input type="text" name="prize-4" id="prize-4" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-5" id="tournament-name-5" />
+											</td>
+											<td><input type="text" name="prize-5" id="prize-5" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-6" id="tournament-name-6" />
+											</td>
+											<td><input type="text" name="prize-6" id="prize-6" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-7" id="tournament-name-7" />
+											</td>
+											<td><input type="text" name="prize-7" id="prize-7" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-8" id="tournament-name-8" />
+											</td>
+											<td><input type="text" name="prize-8" id="prize-8" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-9" id="tournament-name-9" />
+											</td>
+											<td><input type="text" name="prize-9" id="prize-9" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-10" id="tournament-name-10" />
+											</td>
+											<td><input type="text" name="prize-10" id="prize-10" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-11" id="tournament-name-11" />
+											</td>
+											<td><input type="text" name="prize-11" id="prize-11" /></td>
+										</tr>
+										<tr>
+											<td><input type="text" name="tournament-name-12" id="tournament-name-12" />
+											</td>
+											<td><input type="text" name="prize-12" id="prize-12" /></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="field">
+								<label for="point">ALGSポイント</label>
+								<div class="box">
+									<script>document.write(localStorage.getItem("point"))</script>
+								</div>
+							</div>
+							<div class="field">
+								<label for="skill">ランク実績</label>
+								<div class="box">
+									<script>document.write(localStorage.getItem("rank"))</script>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>
 		</div>
 
